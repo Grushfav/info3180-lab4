@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h1 class="page-header">Uploaded Images</h1>
+
+<div class="image-grid">
+  {% for file in uploads %}
+    <div class="image-item">
+      <img src="{{ url_for('get_image', filename=file) }}" alt="{{ file }}" />
+      <p>{{ file }}</p>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

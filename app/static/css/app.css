@@ -18,3 +18,21 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5px;
+}
+
+.image-item {
+  text-align: center;
+}
+
+.image-item img {
+  width: 350px;       /* fixed width */
+  height: 350px;      /* fixed height */
+  object-fit: cover;  /* crop to fit without distortion */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
