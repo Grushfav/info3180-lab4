@@ -52,6 +52,17 @@ This lab demonstrates how to build a Flask application that supports **file uplo
     db.session.commit()
     quit()
 
+Set up .env file
+```
+FLASK_DEBUG=True
+FLASK_RUN_PORT=8080
+FLASK_RUN_HOST=0.0.0.0
+SECRET_KEY= secret_key
+UPLOAD_FOLDER= 
+DATABASE_URL=postgresql://username:password@localhost/databasename
+
+```
+
 
 # File Structure
 
